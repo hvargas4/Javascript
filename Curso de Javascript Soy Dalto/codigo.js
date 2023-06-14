@@ -410,7 +410,7 @@ saludar("Petro")*/
 
 // Un hoombre gana la loteria y decide hacer una fiesta para celebrarlo y compro una maquina que solo deja pasar los mayores de edadm la primera persona que entre despues de las 2AM nno paga 
  
-let free = false;
+/*let free = false;
 
 const validarCliente = (time)=>{
     let edad = prompt("¿Cual es tu edad?");
@@ -433,7 +433,7 @@ validarCliente(0.6);
 validarCliente(1);
 validarCliente(2);
 validarCliente(2.4);
-validarCliente(3);
+validarCliente(3);*/
 
 
 
