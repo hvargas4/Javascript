@@ -436,6 +436,31 @@ validarCliente(2.4);
 validarCliente(3);*/
 
 
+/* Registrar a los alumnos que estan presentes (p) y ausentes (a) en clase 
+pasados los 30 dias mostrar la situacion final de todos los alumnos (Nro total de presentes y ausentes)
+Se puede tener un maximo de 10% de ausencias por semestre si se tienen mas declarar que esta reprobado */  
+
+let cantidad = prompt("¿Cuantos alumnos son?");
+let alumnosTotales =  [];
+for (i = 0; i < cantidad; i++){
+ alumnosTotales[i] = [prompt("Nombre del alumno" + (i+1)),0];
+}  
+const tomarAsistencia = (nombre,p)=>{
+ let presencia = prompt(nombre);
+ if (presencia == "p" || presencia == "P"){
+  alumnosTtotales[p][1]++;
+ }
+}
+for (i = 0; i < 30; i++){
+ for (alumno in alumnosTotales) {
+  tomarAsistencia(alumnosTotales[alumno][0],alumno);
+ }
+}
+
+for (alumno in alumnosTotales) {
+ let resultado = `${alumnosTotales[alumno][0]}:<br>
+ --------Presentes: <b>${alumnosTotales[alumno][1]}</b> <br>
+ --------Ausencias: <b>${30 - alumnosTotales[alumno][1]} </b>`;
 
 
 
