@@ -460,7 +460,14 @@ for (i = 0; i < 30; i++){
 for (alumno in alumnosTotales) {
  let resultado = `${alumnosTotales[alumno][0]}:<br>
  --------Presentes: <b>${alumnosTotales[alumno][1]}</b> <br>
- --------Ausencias: <b>${30 - alumnosTotales[alumno][1]} </b>`;
+ --------Ausencias: <b>${30 - alumnosTotales[alumno][1]} </b>`;}
+
+if (30 - alumnosTotales[alumno][1] > 18 ){
+ resultado+= "<b style='color:red'>REPROBADO POR INASISTENCIAS</b><br></br>
+}else {
+ resultado+= "<br></br>"
+}
+document
 
 
 
